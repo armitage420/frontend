@@ -1,0 +1,20 @@
+{
+  "name": "day1",
+  "version": "1.0.0",
+  "description": "A JavaScript bundler is a tool that puts your code and all its dependencies together in one JavaScript file. There are many of them out there these days, being the most popular ones browserify and webpack. There was no `import` or `require` statements. Now we have the new ES2015 import statement but it is not widely implemented.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

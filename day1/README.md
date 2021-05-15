@@ -23,12 +23,12 @@ Webpack is a static module bundler for modern JavaScript applications. When webp
 * Browser compatibility :  ES5-compliant
 
 ### Basic setup
-
-`npm init -y`
-`npm install webpack webpack-cli --save-dev`
-
+```
+npm init -y
+npm install webpack webpack-cli --save-dev
+```
 ### Project structure
-
+<pre>
 day1
   |- package.json
 + |- webpack.config.js
@@ -36,7 +36,7 @@ day1
 +   |- index.html
 + |- /src
 +   |- index.js
-
+</pre>
 To bundle the lodash dependency with index.js, we'll need to install the library locally:
 
 `npm install --save lodash`

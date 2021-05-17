@@ -96,4 +96,13 @@ const content = "<h1>" + person.favFood + "<h1>";
 
 ## DOM: Document Object Model
 
-When we present the web browser with an HTML document, it creates an object model(DOM). This DOM describes the hierarchical tree structure for that element, how the elements in the document are related to each other and nested. Eg: Document.querySelector() and Document.querySelectorAll() can help us traverse the DOM using js. They take CSS selector as a parameter within quotes.
+When we present the web browser with an HTML document, it creates an object model(DOM). This DOM describes the hierarchical tree structure for that element, how the elements in the document are related to each other and nested. Eg: Document.querySelector() and Document.querySelectorAll() can help us traverse the DOM using js. They take CSS selector as a parameter within quotes. The difference between querySelector() and querySelectorAll() is that querySelector() returns a single object with the first HTML element that matches the 'selectors', but querySelectorAll() returns an array of objects with all the HTML elements that match the 'selectors'.
+
+A common task in js is to modify the classes of an element in some way. It is a simple way of changing appearance or behaviour of an element without having to inject css into the html itself. Instead we just add a class or remove a class to make something to happen. Eg: highilighting a button when something has happened. One of the properties is `Element.className`. 
+
+```js
+Document.querySelector("h1").className = "new_class";
+```
+The above code will get/return the class name of the h1 element in string and replace that classname with new name assigned. There are two problem with the above code:
+* If there are many class names for element h1 then it will wipe out all the class names and replace all of them with a new one. Hence we would have to parse out which classes we want to change and this will result into a very complicated and clutered code.  
+* In other frameworks, `className` is used instead of class in markup to avoid collisions with js keyword to setup classes.
